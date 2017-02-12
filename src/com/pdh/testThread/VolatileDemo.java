@@ -14,9 +14,9 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * @ClassName:VolatileDemo
  * @Function:  
- * volatile 能保证变量自身的原子性，但是不能保证volatile变量相关操作的原子性。
+ * volatile 能保证被修饰变量的可见性，但是不能保证volatile变量相关操作的原子性。
  * 例如：volatile i 是原子性的。但是 i++不是原子性的
- * 解决办法可以使用 synchronized(互斥锁) 或者ReentrantLock(可重入锁)解决
+ * 解决办法可以使用 synchronized(互斥锁) 或者ReentrantLock(可重入锁)替换解决
  * @version
  *
  * @author pengdh
