@@ -6,7 +6,7 @@
  *
 */
 
-package com.pdh.test.thread;
+package com.pdh.test.thread.volatileFeatures;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
