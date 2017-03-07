@@ -1,23 +1,14 @@
-/*****************************************************************
- * 文件名称：MD5.java
- * 系统名称：理财资产管理系统V2.0
- * 模块名称：加密方式
- * 软件版权：恒生电子股份有限公司
- * 功能说明：加密方式
- * 系统版本：2.0.0.1
- * 开发人员：
- * 开发时间：
- * 审核人员：
- * 相关文档：
- * 修改记录：版本信息  修改标签序号  修改人  修改内容  修改单编号
- 
- *****************************************************************/
-
 package com.pdh.test;
-
+/**
+ * 
+ * @ClassName:MD5
+ * @Function: md5加密工具
+ * @version
+ *
+ * @author pengdh
+ * @date: 2017年3月7日 下午10:25:02
+ */
 public class MD5 {
-	public static final String HUNDSUN_VERSION = "@system 理财资产管理系统V2.0 @version 2.0.0.1 @lastModiDate 2013-07-10 @describe 加密方式";
-
 
 	private long m_buf[]; 
 	private long m_bits[]; 
