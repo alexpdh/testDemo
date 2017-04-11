@@ -9,6 +9,15 @@ import javax.xml.soap.Text;
 /**
  * JMSSelector示例
  *
+ * 前面的例子中创建一个消息消费者使用的是:
+ * sesssion.createConsumer(destination)
+ * 另外，还提供了另一种方式：
+ * sesssion.createConsumer(destination, selector)
+ * 这里selector是一个字符串，用来过滤消息。也就是说，这种方式可以创建一个可以只接收特定消息的一个消费者。
+ * Selector的格式是类似于SQL-92的一种语法。可以用来比较消息头信息和属性。
+ * 下面的例子中，创建两个消费者，共同监听同一个Queue，但是它们的Selector不同，
+ * 然后创建一个消息生产者，来发送多个消息。
+ *
  * @auther:pengdh
  * @create:2017-04-11 10:31
  */

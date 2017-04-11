@@ -8,6 +8,8 @@ import javax.jms.*;
 /**
  * queue示例，基于点对点模型
  *
+ *  Queue实现的是点到点模型，在下面的例子中，启动2个消费者共同监听一个Queue，然后循环给这个Queue中发送多个消息
+ *
  * @auther:pengdh
  * @create:2017-04-10 16:50
  */

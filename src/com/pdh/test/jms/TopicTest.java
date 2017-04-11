@@ -9,6 +9,9 @@ import javax.jms.*;
 /**
  * Topic实现发布/订阅模型
  *
+ * 与Queue不同的是，Topic实现的是发布/订阅模型，
+ * 在下面的例子中，启动2个消费者共同监听一个Topic，然后循环给这个Topic中发送多个消息。
+ *
  * @auther:pengdh
  * @create:2017-04-10 17:08
  */

@@ -9,6 +9,8 @@ import javax.jms.*;
  * JMSReplyTo示例，有时消息生产者希望消费者回复一个消息，JMSReplyTo为一个Destination，
  * 表示需要回复的目的地。当然消费者可以不理会它。
  *
+ * 首先消息生产者发送一个消息，内容为“Andy”， 然后消费者收到这个消息之后根据消息的JMSReplyTo，
+ * 回复一个消息，内容为“Hello Andy‘。 最后在回复的Queue上创建一个接收回复消息的消费者，它输出所回复的内容。
  * @auther:pengdh
  * @create:2017-04-11 9:38
  */
