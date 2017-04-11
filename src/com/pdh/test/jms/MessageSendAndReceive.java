@@ -22,18 +22,23 @@ import org.apache.activemq.command.ActiveMQQueue;
  */
 public class MessageSendAndReceive {
     public static void main(String[] args) throws JMSException {
+        // 创建连接工厂
         ConnectionFactory factory = new ActiveMQConnectionFactory("vm://localhost");
+        // 创建并启动连接
         Connection connection = factory.createConnection();
         connection.start();
-
+        // 创建一个消息 queue
         Queue queue = new ActiveMQQueue("testqueue");
+        // 创建session
         final Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+        // 创建一条消息
         Message message = session.createTextMessage("Hello JMS!");
-
+        // 注册一个消息生产者
         MessageProducer producer = session.createProducer(queue);
         producer.send(message);
         System.out.println("Send Message Completed!");
 
+        // 注册一个消息消费者
         MessageConsumer consumer = session.createConsumer(queue);
         consumer.setMessageListener(new MessageListener() {
 
