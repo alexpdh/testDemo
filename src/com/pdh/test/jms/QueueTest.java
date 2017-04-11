@@ -41,7 +41,7 @@ public class QueueTest {
             }
         });
 
-        // 创建一个生产者，然后发送多天消息
+        // 创建一个生产者，然后发送多条消息
         MessageProducer producer = session.createProducer(queue);
         for (int i = 0; i < 10 ; i++) {
             producer.send(session.createTextMessage("message:" + i));
