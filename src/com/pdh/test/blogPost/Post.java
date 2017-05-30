@@ -48,7 +48,14 @@ public class Post {
 //        		"http://alexpdh.com/2017/02/11/jdkbug/",
 //        		"http://alexpdh.com/2017/01/15/hexo-blog-building02/",
 //        		"http://alexpdh.com/2017/02/05/http-Garbled/",
-        		"http://alexpdh.com/2017/04/23/proxy-pattern/"
+//        		"http://alexpdh.com/2017/04/23/proxy-pattern/",
+//              "http://alexpdh.com/2017/05/03/log4j-properties-config/",
+//              "http://alexpdh.com/2017/05/09/factory-method-pattern/",
+//              "http://alexpdh.com/2017/05/14/prototype-pattern/",
+//              "http://alexpdh.com/2017/05/21/template-method-pattern/",
+//              "http://alexpdh.com/2017/05/28/facade-pattern/",
+//              "http://alexpdh.com/2017/05/29/builder-pattern/",
+                "http://alexpdh.com/2017/05/30/observer-pattern/"
 
         };
         String json = Post(url, param);// 执行推送方法
