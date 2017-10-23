@@ -56,10 +56,27 @@ public class Post {
 //              "http://alexpdh.com/2017/05/28/facade-pattern/",
 //              "http://alexpdh.com/2017/05/29/builder-pattern/",
 //                "http://alexpdh.com/2017/05/30/observer-pattern/",
-        "http://alexpdh.com/2017/06/11/abstract-factory-pattern/",
-        "http://alexpdh.com/2017/06/17/state-pattern/",
-        "http://alexpdh.com/2017/06/24/adapter-pattern/",
-        "http://alexpdh.com/2017/06/26/springMVC-restful-api/"
+//        "http://alexpdh.com/2017/06/11/abstract-factory-pattern/",
+//        "http://alexpdh.com/2017/06/17/state-pattern/",
+//        "http://alexpdh.com/2017/06/24/adapter-pattern/",
+//        "http://alexpdh.com/2017/06/26/springMVC-restful-api/",
+        "http://alexpdh.com/2017/07/20/work-in-redis-use/",
+        "http://alexpdh.com/2017/07/22/memento-pattern/",
+        "http://alexpdh.com/2017/07/23/composite-pattern/",
+        "http://alexpdh.com/2017/07/24/iterator-pattern/",
+        "http://alexpdh.com/2017/07/30/singleton-pattern/",
+        "http://alexpdh.com/2017/07/30/birdge-pattern/",
+        "http://alexpdh.com/2017/08/01/command-pattern/",
+        "http://alexpdh.com/2017/08/12/chain-of-responsibility-pattern/",
+        "http://alexpdh.com/2017/08/13/mediator-pattern/",
+        "http://alexpdh.com/2017/08/13/flyweight-pattern/",
+        "http://alexpdh.com/2017/08/14/interpreter-pattern/",
+        "http://alexpdh.com/2017/08/19/visitor-pattern/",
+        "http://alexpdh.com/2017/09/02/springboot-websocket/",
+        "http://alexpdh.com/2017/09/03/springboot-socketio/",
+        "http://alexpdh.com/2017/09/16/jvm-memory/",
+        "http://alexpdh.com/2017/09/17/java-memory-model-01/",
+        "http://alexpdh.com/2017/10/11/vagrant-install-configure/"
 
     };
     String json = Post(url, param);// 执行推送方法

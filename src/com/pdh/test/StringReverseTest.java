@@ -1,10 +1,15 @@
 package com.pdh.test;
 
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ThreadPoolExecutor;
+
 /**
  * 手动实现字符串反转
  *
- * @auther: alexpdh
- * @create: 2017-10-07 13:50
+ * @author: alexpdh
+ * @date: 2017-10-07 13:50
  */
 public class StringReverseTest {
 
@@ -12,9 +17,12 @@ public class StringReverseTest {
 		if (null == originStr || originStr.length() <= 0) {
 			return originStr;
 		} else {
-			return reverse(originStr.substring(1)) + originStr.charAt(0);
+			String sub = originStr.substring(1);
+			char ch = originStr.charAt(0);
+			return reverse(sub) + ch;
 		}
 	}
+
 	public static void main(String[] args) {
 		String originStr = "Program";
 		System.out.println(reverse(originStr));
