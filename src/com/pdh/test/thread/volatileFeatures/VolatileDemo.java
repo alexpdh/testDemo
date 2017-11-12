@@ -92,9 +92,9 @@ public class VolatileDemo {
 			}).start();
 		}
 		// 如果还有子线程在执行，主线程就让出CPU资源，直到所有的子线程都执行完了，主线程再继续往下执行
-		while(Thread.activeCount() > 1) {
-			Thread.yield();
-		}
+//		while(Thread.activeCount() > 1) {
+//			Thread.yield();
+//		}
 		System.out.println("number:"+volDemo.getNumber());
 	}
 }
